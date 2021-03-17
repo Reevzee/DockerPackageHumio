@@ -75,7 +75,9 @@ output.elasticsearch:
 ```
 2.) Edit the config example and fill in `${HUMIO_SERVER}` with the URL of your Humio installation, and `${INGEST_TOKEN}` with the ingest token from the repository you want the data in. 
 
-3.) The below command is the quickest and easiest way to get metric beat running with the config supplied by using metricbeat.docker.yml via a volume mount. 
+## Deploy MetricBeat in Docker ##
+
+The below command is the quickest and easiest way to get metric beat running with the config supplied: metricbeat.docker.yml via a volume mount. 
 With docker run, the volume mount can be specified like this assuming ${metricbeat_config_directory} with the full path to the config locally on your machine.
 
 ```bash

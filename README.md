@@ -78,7 +78,7 @@ output.elasticsearch:
 ## Deploy MetricBeat in Docker ##
 
 The below command is the quickest and easiest way to get metric beat running with the config supplied: metricbeat.docker.yml via a volume mount. 
-With docker run, the volume mount can be specified like this assuming ${metricbeat_config_directory} with the full path to the config locally on your machine.
+With docker run, the volume mount can be specified as below assuming ${metricbeat_config_directory} is replaced with the full path to the config locally on your machine.
 
 ```bash
 docker run -d \

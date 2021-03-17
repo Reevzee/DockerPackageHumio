@@ -28,13 +28,13 @@ Tested with metricbeat-oss:7.11.1
 This setup demonstrates how to set up Elastic Metricbeat to report docker metricsets to Humio.
 The metrics are in JSON format, and there is no need for a parser since all workable fields are available automatically in Humio.
 
-1.) Download the example docker config or copy and past from below in to desired directory. 
+1.) Download the example docker config using the curl command supplied or copy and past the example config from below in to desired directory. 
 
 ```bash
 curl -L -O https://raw.githubusercontent.com/elastic/beats/7.11/deploy/docker/metricbeat.docker.yml 
 ```
 
-2.) Fill in `${HUMIO_SERVER}` with the URL of your Humio installation, and `${INGEST_TOKEN}` with the ingest token from the repository you want the data in. 
+## Humio Configured Config ##
 
 ```yaml
 metricbeat.config:
@@ -73,8 +73,9 @@ output.elasticsearch:
   # protocol is either `http` (default) or `https`. Remove # on protocol otherwise it defaults to http.
   #protocol: "https"
 ```
-  
-2.) One way to configure Metricbeat on Docker is to provide metricbeat.docker.yml via a volume mount. 
+2.) Edit the config example and fill in `${HUMIO_SERVER}` with the URL of your Humio installation, and `${INGEST_TOKEN}` with the ingest token from the repository you want the data in. 
+
+3.) The below command is the quickest and easiest way to get metric beat running with the config supplied by using metricbeat.docker.yml via a volume mount. 
 With docker run, the volume mount can be specified like this assuming ${metricbeat_config_directory} with the full path to the config locally on your machine.
 
 ```bash

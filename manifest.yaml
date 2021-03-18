@@ -1,8 +1,7 @@
 author:
   name: Lewis Reeves <lewis@humio.com>
-name: docker/docker
-description: The Humio Package for Docker provides operational insight into your Docker
-  containers
+name: docker/metrics
+description: Visualize the usage metrics from your Docker containers
 version: 0.0.3
 minHumioVersion: 1.15.0
 type: application

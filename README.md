@@ -15,7 +15,7 @@ The package includes dashboard panels that allow you to view your container perf
 Docker
 
 ## Support
-Beta support from Humio (no SLA). Contact support@humio.com, or go to our Slack channel for more.
+Beta support from Humio (no SLA). Contact support@humio.com, or go to [our Slack channel](https://community.humio.com/) for more.
 
 Tested with metricbeat-oss:7.11.1
 

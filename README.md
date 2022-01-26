@@ -1,5 +1,7 @@
 # Docker Metrics
 
+[![Git](https://app.soluble.cloud/api/v1/public/badges/85f70d00-1359-4fa6-8e5c-e8498406be15.svg?orgId=862729498353)](https://app.soluble.cloud/repos/details/github.com/reevzee/dockerpackagehumio?orgId=862729498353)  
+
 This Docker Metrics package provides operational insight into your Docker containers.
 The package includes dashboard panels that allow you to view your container performance statistics for CPU, memory, and the network. The default metric sets are: `container`, `cpu`, `diskio`, `healthcheck`, `info`, `events`, `memory` and `network`.  It also provides visibility into container events such as `start`, `stop`, and other important commands.
 
